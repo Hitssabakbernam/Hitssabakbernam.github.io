@@ -1,39 +1,274 @@
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>jQuery Mobile: Theme Download</title>
-	<link rel="stylesheet" href="themes/fyptheme.min.css" />
-	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
-	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-</head>
-<body>
-	<div data-role="page" data-theme="b">
-		<div data-role="header" data-position="inline">
-			<h1>It Worked!</h1>
-		</div>
-		<div data-role="content" data-theme="b">
-			<p>Your theme was successfully downloaded. You can use this page as a reference for how to link it up!</p>
-			<pre>
-<strong>&lt;link rel=&quot;stylesheet&quot; href=&quot;themes/fyptheme.min.css&quot; /&gt;</strong>
-<strong>&lt;link rel=&quot;stylesheet&quot; href=&quot;themes/jquery.mobile.icons.min.css&quot; /&gt;</strong>
-&lt;link rel=&quot;stylesheet&quot; href=&quot;http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css&quot; /&gt;
-&lt;script src=&quot;http://code.jquery.com/jquery-1.11.1.min.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js&quot;&gt;&lt;/script&gt;
-			</pre>
-			<p>This is content color swatch "A" and a preview of a <a href="#" class="ui-link">link</a>.</p>
-			<label for="slider1">Input slider:</label>
-			<input type="range" name="slider1" id="slider1" value="50" min="0" max="100" data-theme="b" />
-			<fieldset data-role="controlgroup"  data-type="horizontal" data-role="fieldcontain">
-			<legend>Cache settings:</legend>
-			<input type="radio" name="radio-choice-a1" id="radio-choice-a1" value="on" checked="checked" />
-			<label for="radio-choice-a1">On</label>
-			<input type="radio" name="radio-choice-a1" id="radio-choice-b1" value="off"  />
-			<label for="radio-choice-b1">Off</label>
-			</fieldset>
-		</div>
-	</div>
-</body>
+<!DOCTYPE html>
+    <html>
+    <head>
+        
+        <link rel="stylesheet" href="themes/fyptheme.min.css" />
+        <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    
+    </head> 
+    <body> 
+      
+        <!---------------------PG 1----------------------------------------------------------------------------------->
+        <div data-role = "page" id = "page1"> 
+        <div data-role = "header"> 
+        <h1 style="font-size: 27px;font-family:Arial, Helvetica, sans-serif;">Pesanan Hidangan Sihat Kantin Sekolah </h1> 
+        <div data-role="navbar"> 
+            
+            <ul> 
+            <li>
+                <a href = "#page1" data-icon ="home"> Utama </a>
+            </li> 
+            
+            <li>
+                <a href = "#page2" data-icon = "bars">Pendaftaran </a>
+            </li>
+
+            <li>
+                <a href = "#page3" data-icon = "bullets">Pemberhentian </a>
+            </li>
+
+            <li>
+                <a href = "#page4" data-icon = "bullets">Result </a>
+            </li>
+
+             </ul> 
+            
+            </div> 
+        
+        </div> 
+        
+        <div data-role="main" class = "ui-content"> 
+            
+           
+
+            <p style="text-align: center;"><img src="Pengenalan.jpeg" alt="Garispandu"  width="1500" height="520"></p>
+            <br>
+                <p style="text-align: center;"><img src="Garis_panduan.jpg" alt="Garispandu"  width="500" height="600"></p>
+
+            
+                <h1 style="text-align: center;border-style: double;border-width: 15px;border-color: greenyellow;font-size: 35px;font-family:Times New Roman;">OBJEKTIF</h1>                 
+
+                <br>
+                <p style="font-size: 22px;"> Objektif webpage ini ialah untuk memesan pesanan menu MyHiTS Kantin Sekolah Sabak 
+                Bernam, dimana aplikasi webpage ini akan bertindak sebagai pemudahcara yang dapat menghubungkan terus maklumat
+                 pesanan makanan secara atas talian dari pihak ibubapa kepada pihak pengusaha kantin dengan lebih efisien dan 
+                 berkesan dengan yang menawarkan pilihan menu berkhasiat dan berasaskan kepada keperluan kalori murid yang 
+                 diperlukan, serta dipantau secara konsisten oleh Nutritionist dengan harga pakej makanan yang berpatutan. </p> 
+            
+                 <br><br> 
+
+                   
+        
+        </div> 
+        
+        <div class = "footer"> 
+            
+            <p style="text-align: center;padding: 3px;color:black;">PAGE 1</p>
+            <p style="text-align: left;padding: 3px;color:black;font-size: 10px;">Created by Harnee and Sangeetha.JTMK.PMJ © 2022</p>
+            
+        
+        </div> 
+    
+    </div> 
+
+    <!--------------------------------PG 2------------------------------------------------------------------------------------------------>
+    <div data-role = "page" id = "page2" > 
+        
+        <div data-role = "header"> 
+            
+            <h1 style="font-size: 27px;font-family:Arial, Helvetica, sans-serif;">Pesanan Hidangan Sihat Kantin Sekolah </h1> 
+            
+            <div data-role="navbar"> 
+                
+                <ul> 
+                    <li>
+                        <a href = "#page1" data-icon ="home"> Utama </a>
+                    </li> 
+                    
+                    <li>
+                        <a href = "#page2" data-icon = "bars">Pendaftaran </a>
+                    </li>
+        
+                    <li>
+                        <a href = "#page3" data-icon = "bullets">Pemberhentian </a>
+                    </li>
+        
+                    <li>
+                        <a href = "#page4" data-icon = "bullets">Result </a>
+                    </li>
+        
+                     </ul> 
+
+</div> 
+
+</div> 
+
+<div data-role="main" class = "ui-content"> 
+    
+    
+
+    <p style="text-align: center;"><img src="Pendaftaran.jpeg" alt="Garispandu"  width="1500" height="520"></p>
+
+
+
+    <!--------------------link google drive-------->
+    <h1 style="text-align: center;border-style: double;border-width: 15px;border-color: greenyellow;font-size: 35px;font-family:Times New Roman;">BORANG</h1> 
+    
+    <p>
+
+        <a href="https://forms.gle/CXaDxKG7BhgdfX5T6" target="_blank">a] Pesanan Makanan Dalam Talian untuk Pelajar Sekolah</a>
+    </p>
+
+    <p>
+
+        <a href="https://forms.gle/RWB1W1yvHZP1aFYNA" target="_blank">b] Hebahan Program Hidangan Berkhasiat Di Sekolah (HiTS) Daerah Sabak Bernam Tahun 2022</a>
+    </p>
+       
+    <p>
+
+        <a href="https://forms.gle/TwKNGUAgHwKkBzhh6" target="_blank">c] Tinjauan Pelaksanaan Program Hidangan Makanan Berkhasiat Di Sekolah (HiTS) Di Daerah Sabak Bernam Tahun 2022</a>
+
+    </p>
+    
+    <p>
+
+        <a href="https://forms.gle/hCc5DrnfG2JPbU1M7" target="_blank">d] Permohonan Melaksanakan Program Hidangan Berkhasiat Di Sekolah Tahun 2022</a>
+    </p>
+
+    <p>
+
+        <a href="https://forms.gle/HxdkZ6u22HtKWEKE7" target="_blank">e] Persetujuan IbuBapa /Penjaga Untuk Menyertai Program Hidangan Berkhasiat Di Sekolah (HiTS) Daerah Sabak Bernam Tahun 2022</a>
+    </p>
+
+    <p>
+
+        <a href="https://forms.gle/qQjeo4cJ1yhVCDmVA" target="_blank">f] Tinjauan Pasaran Pelaksanaan Program Hidangan Berkhasiat Di Sekolah (HiTS) Daerah Sabak Bernam Tahun 2022</a>
+    </p>
+    <br>
+     <!--------------------------youtube vd ------------------------------------------------------------>
+
+     <p style="text-align: center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/Yq30mEPGNIU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+     <br>
+        
+      
+</div> 
+
+<div class= "footer"> 
+       
+    <p style="text-align: center;padding: 3px;color:black;">PAGE 2</p>
+    <p style="text-align: left;padding: 3px;color:black;font-size: 10px;">Created by Harnee and Sangeetha.JTMK.PMJ © 2022</p>
+
+        
+</div> 
+
+</div> 
+
+<!----------------------------PG 3--------------------------------------------------------------------------------------------------->
+
+<div data-role = "page" id = "page3"> 
+    <div data-role = "header"> 
+        <h1 style="font-size: 27px;font-family:Arial, Helvetica, sans-serif;">Pesanan Hidangan Sihat Kantin Sekolah </h1>  
+    <div data-role="navbar"> 
+        
+        <ul> 
+        <li>
+            <a href = "#page1" data-icon ="home"> Utama </a>
+        </li> 
+        
+        <li>
+            <a href = "#page2" data-icon = "bars">Pendaftaran </a>
+        </li>
+
+        <li>
+            <a href = "#page3" data-icon = "bullets">Pemberhentian </a>
+        </li>
+
+        <li>
+            <a href = "#page4" data-icon = "bullets">Result </a>
+        </li>
+
+         </ul> 
+        
+        </div> 
+    
+    </div> 
+    
+    <div data-role="main" class = "ui-content"> 
+        
+        
+        <p style="text-align: center;"><img src="Pemberhentian.jpeg" alt="Garispandu"  width="1500" height="520"></p>
+        
+        
+        <h1 style="text-align: center;border-style: double;border-width: 15px;border-color: greenyellow;font-size: 35px;font-family:Times New Roman;">BORANG PEMBERHENTIAN</h1> 
+
+<br>
+        <p>
+
+            <a href="https://forms.gle/VG54vV3evQDsVm5X9" target="_blank">a] Pemberhentian Penyertaan Program Hidangan Berkhasiat Di Sekolah (HiTS) Daerah Sabak Bernam Tahun 2022</a>   </p>
+
+        <br>
+
+               
+    
+    </div> 
+    
+    <div class = "footer"> 
+        
+        <p style="text-align: center;padding: 3px;color:black;">PAGE 3</p>
+        <p style="text-align: left;padding: 3px;color:black;font-size: 10px;">Created by Harnee and Sangeetha.JTMK.PMJ © 2022</p>
+
+    
+    </div> 
+
+</div> 
+
+<!--------------------------------------------------PG 4-------------------------------------------------------------------------->
+    <div data-role = "page" id = "page4" > 
+        
+        <div data-role = "header"> 
+            
+            <h1 style="font-size: 27px;font-family:Arial, Helvetica, sans-serif;">Pesanan Hidangan Sihat Kantin Sekolah </h1> 
+            
+            <div data-role="navbar"> 
+                
+                <ul> 
+                    <li>
+                        <a href = "#page1" data-icon ="home"> Utama </a>
+                    </li> 
+                    
+                    <li>
+                        <a href = "#page2" data-icon = "bars">Pendaftaran </a>
+                    </li>
+        
+                    <li>
+                        <a href = "#page3" data-icon = "bullets">Pemberhentian </a>
+                    </li>
+        
+                    <li>
+                        <a href = "#page4" data-icon = "bullets">Result </a>
+                    </li>
+        
+                     </ul> 
+
+</div> 
+
+</div> 
+
+<div data-role="main" class = "ui-content"> 
+
+    <iframe  width=1550 height=600  src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTclLjl7LcF4y_tgr-ECZtt4_lOybLPGE3c-dalW502--1aUDNgCCJ2nKUXs-2pb2DtKhmAW0BZ6ujn/pubhtml?widget=true&amp;headers=false"></iframe>
+
+
+</div> 
+
+<div class= "footer"> 
+    
+    <p style="text-align: center;padding: 3px;color:black;">PAGE 4</p>
+    <p style="text-align: left;padding: 3px;color:black;font-size: 10px;">Created by Harnee and Sangeetha.JTMK.PMJ © 2022</p>
+
+</div> 
+</body> 
 </html>
