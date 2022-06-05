@@ -1,50 +1,91 @@
 <!DOCTYPE html>
-    <html>
-    <head>
-        
-        <link rel="stylesheet" type="text/css" href="https://hitssabakbernam.github.io/css/fyptheme.min.css" />
-        <link rel="stylesheet" type="text/css" href="https://hitssabakbernam.github.io/css/jquery.mobile.icons.min.css" />
-        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
-        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
     
-    </head> 
-    <body> 
-      
-        <!---------------------PG 1----------------------------------------------------------------------------------->
-        <div data-role = "page" id = "page1"> 
-        <div data-role = "header"> 
-        <h1 style="font-size: 27px;font-family:Arial, Helvetica, sans-serif;">Pesanan Hidangan Sihat Kantin Sekolah </h1> 
-        <div data-role="navbar"> 
-            
-            <ul> 
-            <li>
-                <a href = "#page1" data-icon ="home"> Utama </a>
-            </li> 
-            
-            <li>
-                <a href = "#page2" data-icon = "bars">Pendaftaran </a>
-            </li>
+* {
+  box-sizing: border-box;
+}
 
-            <li>
-                <a href = "#page3" data-icon = "bullets">Pemberhentian </a>
-            </li>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-            <li>
-                <a href = "#page4" data-icon = "bullets">Result </a>
-            </li>
+/* The grid: 4 equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  outline-style: groove;
+  outline-color:black;
+  padding: 22px;
+  text-align: center;
+  font-size: 15px;
+  cursor: pointer;
+  color: white;
+ 
+}
 
-             </ul> 
-            
-            </div> 
-        
-        </div> 
-        
-        <div data-role="main" class = "ui-content"> 
-            
-           
+.containerTab {
+  padding: 15px;
+  color: black;
 
-            <p style="text-align: center;"><img src="Pengenalan.jpeg" alt="Garispandu"  width="1500" height="520"></p>
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Closable button inside the container tab */
+.closebtn {
+  float: right;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body onload="openTab('b1')">
+
+<div>
+  <h1 style="text-align: center;padding: 25px;font-size: 30px;background-color:mediumspringgreen;font-family:Arial, Helvetica, sans-serif;">Pesanan Hidangan Sihat Kantin Sekolah </h1> 
+</div>
+
+<!-- 4 columns -->
+<div class="row">
+  <div class="column" onclick="openTab('b1');" data-icon ="home"style="background:lightslategray;">
+  <img src="themes/images/icons-png/home-white.png" width="14" height="14">
+    UTAMA
+  </div>
+  
+  <div class="column" onclick="openTab('b2');"data-icon ="home" style="background:lightslategray;">
+  <img src="themes/images/icons-png/bars-white.png" width="14" height="14">
+    PENDAFTARAN
+  </div>
+  
+  <div class="column" onclick="openTab('b3');"data-icon ="home" style="background:lightslategray;">
+  <img src="themes/images/icons-png/bullets-white.png" width="14" height="14">
+    PEMBERENTIAN
+  </div>
+  
+  <div class="column" onclick="openTab('b4');"data-icon ="home" style="background:lightslategray;">
+  <img src="themes/images/icons-png/bullets-white.png" width="14" height="14">
+    RESULT
+  </div>
+</div>
+
+ 
+<!------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+<!-- PAGE 1) -->
+<div id="b1" class="containerTab" style="display:none;background:WHITE">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+ <p style="text-align: center;"><img src="Pengenalan.jpeg" alt="Garispandu"  width="1500" height="520"></p>
             <br>
                 <p style="text-align: center;"><img src="Garis_panduan.jpg" alt="Garispandu"  width="500" height="600"></p>
 
@@ -59,58 +100,24 @@
                  diperlukan, serta dipantau secara konsisten oleh Nutritionist dengan harga pakej makanan yang berpatutan. </p> 
             
                  <br><br> 
-
-                   
-        
-        </div> 
-        
-        <div class = "footer"> 
-            
+                 
+                  
+       
+            <!-- (FOOTER PAGE 1) -->
             <p style="text-align: center;padding: 3px;color:black;">PAGE 1</p>
             <p style="text-align: left;padding: 3px;color:black;font-size: 10px;">Created by Harnee and Sangeetha.JTMK.PMJ © 2022</p>
             
         
         </div> 
+  <!------------------------------------------------------------------------------------------------------------------------------- -->
+  
     
-    </div> 
-
-    <!--------------------------------PG 2------------------------------------------------------------------------------------------------>
-    <div data-role = "page" id = "page2" > 
-        
-        <div data-role = "header"> 
-            
-            <h1 style="font-size: 27px;font-family:Arial, Helvetica, sans-serif;">Pesanan Hidangan Sihat Kantin Sekolah </h1> 
-            
-            <div data-role="navbar"> 
-                
-                <ul> 
-                    <li>
-                        <a href = "#page1" data-icon ="home"> Utama </a>
-                    </li> 
-                    
-                    <li>
-                        <a href = "#page2" data-icon = "bars">Pendaftaran </a>
-                    </li>
-        
-                    <li>
-                        <a href = "#page3" data-icon = "bullets">Pemberhentian </a>
-                    </li>
-        
-                    <li>
-                        <a href = "#page4" data-icon = "bullets">Result </a>
-                    </li>
-        
-                     </ul> 
-
-</div> 
-
-</div> 
-
-<div data-role="main" class = "ui-content"> 
-    
-    
-
-    <p style="text-align: center;"><img src="Pendaftaran.jpeg" alt="Garispandu"  width="1500" height="520"></p>
+   
+ <!-- PAGE 2) -->
+<div data-role = "header"> 
+<div id="b2" class="containerTab" style="display:none;background:white">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <p style="text-align: center;"><img src="Pendaftaran.jpeg" alt="Garispandu"  width="1500" height="520"></p>
 
 
 
@@ -154,52 +161,23 @@
      <br>
         
       
-</div> 
+ 
 
-<div class= "footer"> 
+ <!-- (FOOTER PAGE 2) -->
        
     <p style="text-align: center;padding: 3px;color:black;">PAGE 2</p>
     <p style="text-align: left;padding: 3px;color:black;font-size: 10px;">Created by Harnee and Sangeetha.JTMK.PMJ © 2022</p>
 
-        
+   
 </div> 
+ <!------------------------------------------------------------------------------------------------------------------------------- -->
 
-</div> 
 
-<!----------------------------PG 3--------------------------------------------------------------------------------------------------->
-
-<div data-role = "page" id = "page3"> 
-    <div data-role = "header"> 
-        <h1 style="font-size: 27px;font-family:Arial, Helvetica, sans-serif;">Pesanan Hidangan Sihat Kantin Sekolah </h1>  
-    <div data-role="navbar"> 
-        
-        <ul> 
-        <li>
-            <a href = "#page1" data-icon ="home"> Utama </a>
-        </li> 
-        
-        <li>
-            <a href = "#page2" data-icon = "bars">Pendaftaran </a>
-        </li>
-
-        <li>
-            <a href = "#page3" data-icon = "bullets">Pemberhentian </a>
-        </li>
-
-        <li>
-            <a href = "#page4" data-icon = "bullets">Result </a>
-        </li>
-
-         </ul> 
-        
-        </div> 
-    
-    </div> 
-    
-    <div data-role="main" class = "ui-content"> 
-        
-        
-        <p style="text-align: center;"><img src="Pemberhentian.jpeg" alt="Garispandu"  width="1500" height="520"></p>
+ <!-- PAGE 3) -->
+<div id="b3" class="containerTab" style="display:none;background:WHITE">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  
+  <p style="text-align: center;"><img src="Pemberhentian.jpeg" alt="Garispandu"  width="1500" height="520"></p>
         
         
         <h1 style="text-align: center;border-style: double;border-width: 15px;border-color: greenyellow;font-size: 35px;font-family:Times New Roman;">BORANG PEMBERHENTIAN</h1> 
@@ -211,11 +189,7 @@
 
         <br>
 
-               
-    
-    </div> 
-    
-    <div class = "footer"> 
+      <!-- (FOOTER PAGE 3) -->    
         
         <p style="text-align: center;padding: 3px;color:black;">PAGE 3</p>
         <p style="text-align: left;padding: 3px;color:black;font-size: 10px;">Created by Harnee and Sangeetha.JTMK.PMJ © 2022</p>
@@ -224,51 +198,35 @@
     </div> 
 
 </div> 
+<!------------------------------------------------------------------------------------------------------------------------------- -->
 
-<!--------------------------------------------------PG 4-------------------------------------------------------------------------->
-    <div data-role = "page" id = "page4" > 
-        
-        <div data-role = "header"> 
-            
-            <h1 style="font-size: 27px;font-family:Arial, Helvetica, sans-serif;">Pesanan Hidangan Sihat Kantin Sekolah </h1> 
-            
-            <div data-role="navbar"> 
-                
-                <ul> 
-                    <li>
-                        <a href = "#page1" data-icon ="home"> Utama </a>
-                    </li> 
-                    
-                    <li>
-                        <a href = "#page2" data-icon = "bars">Pendaftaran </a>
-                    </li>
-        
-                    <li>
-                        <a href = "#page3" data-icon = "bullets">Pemberhentian </a>
-                    </li>
-        
-                    <li>
-                        <a href = "#page4" data-icon = "bullets">Result </a>
-                    </li>
-        
-                     </ul> 
-
-</div> 
-
-</div> 
-
-<div data-role="main" class = "ui-content"> 
-
-    <iframe  width=1550 height=600  src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTclLjl7LcF4y_tgr-ECZtt4_lOybLPGE3c-dalW502--1aUDNgCCJ2nKUXs-2pb2DtKhmAW0BZ6ujn/pubhtml?widget=true&amp;headers=false"></iframe>
+<!-- PAGE 4 -->
+<div id="b4" class="containerTab" style="display:none;background:white">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  
+  <!-- GOOGLE SHEET OF Pesanan Makanan Dalam Talian untuk Pelajar Sekolah -->
+    <iframe width=1550 height=600 src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTclLjl7LcF4y_tgr-ECZtt4_lOybLPGE3c-dalW502--1aUDNgCCJ2nKUXs-2pb2DtKhmAW0BZ6ujn/pubhtml?widget=true&amp;headers=false"></iframe>
 
 
-</div> 
 
-<div class= "footer"> 
-    
+    <!-- (FOOTER PAGE 4) -->
     <p style="text-align: center;padding: 3px;color:black;">PAGE 4</p>
     <p style="text-align: left;padding: 3px;color:black;font-size: 10px;">Created by Harnee and Sangeetha.JTMK.PMJ © 2022</p>
 
 </div> 
-</body> 
-</html>
+<!------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+<script>
+function openTab(tabName) {
+  var i, x;
+  x = document.getElementsByClassName("containerTab");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(tabName).style.display = "block";
+}
+</script>
+
+</body>
+</html> 
